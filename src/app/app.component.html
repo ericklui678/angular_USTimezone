@@ -1,0 +1,7 @@
+<button [ngClass]="lastClick[0]? 'yellow' : 'none'" (click)='datePST()'>PST</button>
+<button [ngClass]="lastClick[1]? 'yellow' : 'none'" (click)='dateMST()'>MST</button>
+<button [ngClass]="lastClick[2]? 'yellow' : 'none'" (click)='dateCST()'>CST</button>
+<button [ngClass]="lastClick[3]? 'yellow' : 'none'" (click)='dateEST()'>EST</button>
+<button (click)='dateClear()'>Clear</button>
+
+{{date | date: 'medium'}}
